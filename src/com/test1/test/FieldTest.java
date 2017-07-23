@@ -5,6 +5,12 @@ import java.lang.reflect.Method;
 
 import com.test1.bean.Son;
 
+/**
+ * 获取 Filed和method 属性
+ * 
+ * @author gsm02
+ *
+ */
 public class FieldTest {
 
 	public static void main(String[] args) {

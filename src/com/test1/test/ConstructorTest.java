@@ -4,6 +4,12 @@ import java.lang.reflect.Constructor;
 
 import com.test1.bean.Son;
 
+/**
+ * 获取 Constructor
+ * 
+ * @author gsm02
+ *
+ */
 public class ConstructorTest {
 
 	public static void main(String[] args) {
