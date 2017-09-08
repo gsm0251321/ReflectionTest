@@ -1,8 +1,8 @@
-package com.test1.test;
+package com.lesson2.test;
 
 import java.lang.reflect.Constructor;
 
-import com.test1.bean.Son;
+import com.lesson2.bean.Son;
 
 /**
  * 获取 Constructor
@@ -10,11 +10,9 @@ import com.test1.bean.Son;
  * @author gsm02
  *
  */
-public class ConstructorTest {
+public class TestClassGetConstructor {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Class clz = Son.class;
 
 		Constructor[] constructors = clz.getConstructors();

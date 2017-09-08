@@ -1,21 +1,35 @@
-package com.test1.test;
+/**
+ * 
+ */
+package com.lesson2.test;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 
-import com.test1.bean.Son;
+import com.lesson2.bean.Son;
 
 /**
- * 获取 Filed和method 属性
+ * 获取 Filed
+ * 
+ * 
+ * 大家细细体会一下，不过需要注意的是 getDeclaredFileds() 方法可以获取 private、protected、public 和
+ * default 属性，但是它获取不到从父类继承下来的属性。
+ * 
+ * //获取所有的属性，但不包括从父类继承下来的属性<br>
+ * public Field[] getDeclaredFields() throwsSecurityException {}
+ * 
+ * //获取自身的所有的 public 属性，包括从父类继承下来的。<br>
+ * public Field[] getFields() throws SecurityException {
  * 
  * @author gsm02
  *
  */
-public class FieldTest {
+public class TestClassGetFiled {
 
+	/**
+	 * @param args
+	 */
+	@SuppressWarnings({ "rawtypes", "unused" })
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Class cls = Son.class;
 
 		try {
@@ -56,14 +70,6 @@ public class FieldTest {
 			System.out.println("Field :" + f.getName());
 		}
 
-		Method[] method1 = cls.getDeclaredMethods();
-		for (Method m : method1) {
-			System.out.println("Declared method :" + m.getName());
-		}
-
-		Method[] method2 = cls.getMethods();
-		for (Method m : method2) {
-			System.out.println("method :" + m.getName());
-		}
 	}
+
 }

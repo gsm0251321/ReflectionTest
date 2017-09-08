@@ -1,4 +1,4 @@
-package com.test2.bean;
+package com.lesson3.bean;
 
 import java.util.HashMap;
 import java.util.List;

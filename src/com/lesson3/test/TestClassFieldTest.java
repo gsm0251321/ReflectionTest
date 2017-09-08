@@ -1,20 +1,20 @@
-package com.test2.test;
+package com.lesson3.test;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 
-import com.test2.bean.Son;
+import com.lesson3.bean.Son;
 
 /**
- * Field 类型的获取/修饰符获取
+ * Field 类型的获取
+ * 
+ * getType()和 getGenericType()获取的field类型不同,getGenericType() 方法能够获取到泛型类型
  * 
  * @author gsm02
  *
  */
-public class FieldTest {
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class TestClassFieldTest {
 
+	public static void main(String[] args) {
 		Class cls = Son.class;
 
 		Field[] filed2 = cls.getFields();
@@ -23,9 +23,9 @@ public class FieldTest {
 			System.out.println("Field :" + f.getName());
 			System.out.println("Field type:" + f.getType());
 			System.out.println("Field generic type:" + f.getGenericType());
-			System.out.println("Field Modifier:" + Modifier.toString(f.getModifiers()));
 			System.out.println("-------------------");
 		}
 
 	}
+
 }

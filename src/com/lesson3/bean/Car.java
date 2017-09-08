@@ -1,12 +1,5 @@
-/**
- * 
- */
-package com.test2.bean;
+package com.lesson3.bean;
 
-/**
- * @author gsm02
- *
- */
 public class Car {
 	private String mBand;
 

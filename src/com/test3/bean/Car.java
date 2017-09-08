@@ -6,7 +6,7 @@ package com.test3.bean;
 import java.util.HashMap;
 import java.util.List;
 
-import com.test2.bean.Son;
+import com.lesson3.bean.Son;
 
 /**
  * @author gsm02

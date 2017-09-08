@@ -1,7 +1,7 @@
-package com.test1.bean;
+package com.lesson2.bean;
 
 public class Son extends Farther {
-	int c;
+	public int c;
 
 	private String d;
 

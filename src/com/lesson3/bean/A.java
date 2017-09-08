@@ -1,4 +1,4 @@
-package com.test2.bean;
+package com.lesson3.bean;
 
 public class A {
 	public int a;

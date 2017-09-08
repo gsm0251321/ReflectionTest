@@ -1,4 +1,4 @@
-package com.test1.bean;
+package com.lesson2.bean;
 
 public abstract class TestModifier {
 

@@ -1,12 +1,18 @@
-package com.test1.test;
+package com.lesson2.test;
 
-import com.test1.bean.Car;
+import com.lesson2.bean.Car;
 
-public class Test02 {
+/**
+ * 获取类的完整名称
+ * 
+ * @author gsm02
+ *
+ */
+public class TestClassGetName {
 
 	public static void main(String[] args) {
 		try {
-			Class clz = Class.forName("com.test1.bean.Car");
+			Class clz = Class.forName("com.lesson2.bean.Car");
 
 			Class clz1 = float.class;
 
